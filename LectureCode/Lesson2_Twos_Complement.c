@@ -9,7 +9,6 @@ int main(int argc, char const *argv[])
 {
     int sgned_int_pos = 7;
     int sgned_int_neg = -8;
-
     printf("\n");
     printf("%d: ", sgned_int_pos);
     printBits(sizeof(sgned_int_pos), &sgned_int_pos);
@@ -28,7 +27,6 @@ void printBits(size_t const size, void const * const ptr)
 
     for (i=size-1;i>=0;i--)
     {
-        
         for (j=7;j>=0;j--)
         {
             byte = (b[i] >> j) & 1;
